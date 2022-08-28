@@ -1,0 +1,134 @@
+##############################################
+# NsCDE - Not so Common Desktop Environment
+# Theme: Custom, Colors: 8
+##############################################
+
+#
+# This file is a part of the NsCDE - Not so Common Desktop Environment
+# Author: Hegel3DReloaded
+# Licence: GPLv3
+#
+
+UnsetEnv NSCDE_PALETTE
+SetEnv NSCDE_PALETTE Custom
+
+UnsetEnv NSCDE_PALETTE_NCOLORS
+SetEnv NSCDE_PALETTE_NCOLORS 8
+
+InfoStoreAdd fp_8color_variant 5
+InfoStoreAdd wsmcolored 0
+
+# Bare default (should not be seen at all)
+Colorset 0 fg #000000000000, bg #80d97d709a73
+
+# Inactive windows and default widget fg/bg/sh/hi, regular menu, window borders
+Colorset 1 fg #000000000000, bg #aeaeb2b2c3c3, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #947a97e4a665, Plain, NoShape
+
+# Active, focused windows, titlebar of WspLocPager, active window borders
+Colorset 2 fg #ffffffffffff, bg #b2b24d4d7a7a, hi #dd0daf38c3a4, sh #589e26553cbd, fgsh #97e441b4681a, Plain, NoShape
+
+# Hilight menu (main menu selected), Subpanels of front panel selected, mousover baloons
+Colorset 4 fg #000000000000, bg #947a97e4a665, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #5eba60e76a28, Plain, NoShape
+
+# Grayed / disabled menu
+Colorset 5 fg #800080008000, bg #aeaeb2b2c3c3
+
+# Menu prelight for colorset 22 (Page Manager)
+Colorset 6 fg #000000000000, bg #947a97e4a665, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #5eba60e76a28, Plain, NoShape
+
+############################
+# NsCDE additional Colorsets
+############################
+
+# For FvwmScript: TextField and List widgets
+Colorset 20 fg #000000000000, bg #fffff7f7e9e9, hi #ccccc65fbb20, sh #999994c78c58, fgsh #d998d2c5c6d2, Plain, NoShape
+
+# 2nd windows color when Colors == 8
+Colorset 21 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #947a97e4a665, Plain, NoShape
+
+# 2nd Color for transient windows when Colors == 8
+Colorset 22 fg #000000000000, bg #aeaeb2b2c3c3, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #5eba60e76a28, Plain, NoShape
+
+# Front Panel variant of 21 - can be 5 or 8 variant - 5
+Colorset 23 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #947a97e4a665, Plain, NoShape
+
+# Light gaps on the Front Panel menu and iconify buttons (topShadowColor from cs #1)
+Colorset 14 fg #dd1fded8e62a, bg #dd1fded8e62a, hi #dd1fded8e62a, sh #dd1fded8e62a, fgsh #dd1fded8e62a, Plain, NoShape
+
+# Dark gaps on the Front Panel menu and iconify buttons (bottomShadowColor from cs #1)
+Colorset 15 fg #5eba60e76a28, bg #5eba60e76a28, hi #5eba60e76a28, sh #5eba60e76a28, fgsh #5eba60e76a28, Plain, NoShape
+
+# Last Pressed Subpanel Launcher Button on the Front Panel
+# It is unknown why there must be a fg color here but
+# letters of the selected entry are green if this is not
+# the case.
+Colorset 16 Pixmap NsCDE/LastPressedXL.xpm, fg #ffffffffffff, fgsh #330033003300
+
+# Press inficator on subpanel launchers of the Front Panel
+Colorset 17 Pixmap NsCDE/LastPressedFPSubLnch.xpm, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #947a97e4a665
+
+# Icon background pixmap inactive
+Colorset 18 Pixmap NsCDE/IconBgI.xpm
+
+# Icon background pixmap active
+Colorset 19 Pixmap NsCDE/IconBgA.xpm
+
+# Icon background pixmap inactive (Large)
+Colorset 54 Pixmap NsCDE/IconBgLI.xpm
+
+# Icon background pixmap active (Large)
+Colorset 55 Pixmap NsCDE/IconBgLA.xpm
+
+# Icon background pixmap inactive (Extra Large)
+Colorset 56 Pixmap NsCDE/IconBgXLI.xpm
+
+# Icon background pixmap active (Extra Large)
+Colorset 57 Pixmap NsCDE/IconBgXLA.xpm
+
+# FrontPanel Press Indicator Large
+Colorset 24 Pixmap NsCDE/SelectedL.xpm
+
+# FrontPanel Press Indicator Small
+Colorset 25 Pixmap NsCDE/SelectedS.xpm
+
+# FrontPanel Menus Press Indicator
+Colorset 26 Pixmap NsCDE/SelectedXL.xpm
+
+# FrontPanel Subpanel Launcher Press Indicator
+Colorset 27 Pixmap NsCDE/PressedFPL.xpm, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #947a97e4a665
+
+# Pressed Button on Colorset 21 (Style Manager)
+Colorset 28 fg #000000000000, bg #947a97e4a665, hi #5eba60e76a28, sh #dd1fded8e62a, fgsh #947a97e4a665, Plain, NoShape
+
+# Last Pressed Button on Front Panel
+Colorset 29 Pixmap NsCDE/LastPressedFPB.xpm
+
+# Last Pressed Small Button on Front Panel
+Colorset 30 Pixmap NsCDE/LastPressedFPS.xpm
+
+# Workspace Manager Buttons: Even - pressed/active, Odd - inactive
+# One, Five ...
+Colorset 40 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #330033003300, Plain, NoShape
+Colorset 41 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #5eba60e76a28, sh #dd1fded8e62a, fgsh #330033003300, Plain, NoShape
+# Two, Six ...
+Colorset 42 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #330033003300, Plain, NoShape
+Colorset 43 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #5eba60e76a28, sh #dd1fded8e62a, fgsh #330033003300, Plain, NoShape
+# Three, Seven ...
+Colorset 44 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #330033003300, Plain, NoShape
+Colorset 45 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #5eba60e76a28, sh #dd1fded8e62a, fgsh #330033003300, Plain, NoShape
+# Four, Eight ...
+Colorset 46 fg #ffffffffffff, bg #d3d397979898, hi #ecded2c9d338, sh #711a50f05179, fgsh #330033003300, Plain, NoShape
+Colorset 47 fg #ffffffffffff, bg #d3d397979898, hi #711a50f05179, sh #ecded2c9d338, fgsh #330033003300, Plain, NoShape
+
+# Exception from Colorset 1: Panel SubMenus Font Shadow darker (fgsh == sel_color_3) when FP variant is 5
+Colorset 49 fg #ffffffffffff, bg #aeaeb2b2c3c3, hi #dd1fded8e62a, sh #5eba60e76a28, fgsh #330033003300, Plain, NoShape
+
+# Transparent handler (WSM, MonthDayApplet, CheckMailApplet ...)
+Colorset 52 fg #ffffffffffff, Transparent
+
+# For ItemDraw Widget of FvwmScript (used in WSM)
+Colorset 53 fg #000000000000, bg #000000000000, hi #000000000000, sh #000000000000
+
+# Colorset for test indicators
+Colorset 50 fg red, bg green, hi blue, sh yellow
+
