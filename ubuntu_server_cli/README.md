@@ -1,12 +1,20 @@
 # Ubunbu Server Config
 
+## Install base system
+```shell
+sudo apt install -y locales \
+  network-manager-gnome network-manager-openvpn \
+  thunar terminator \
+  git build-essential nano
+```
+
 ## Troubleshooting
 
 ### Locales
 
 ```
 sudo apt install locales
-sudo dpkr-reconfigure locales
+sudo dpkg-reconfigure locales
 ```
 
 ### Wait for network to be configured upon boot
